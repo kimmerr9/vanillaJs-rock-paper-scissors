@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="score-wrapper">
+            <div class="score">Player: <span class="points">0</span></div>
+            <div class="score">Tie: <span class="points">0</span></div>
+            <div class="score">Computer: <span class="points">0</span></div>
+        </div>
+        <div class="controls">
+            <div class="btn"><span class="btn-txt" onclick="playGame('rock')">Rock</span></div>
+            <div class="btn"><span class="btn-txt" onclick="playGame('paper')">Paper</span></div>
+            <div class="btn"><span class="btn-txt" onclick="playGame('scissors')">Scissors</span></div>
+        </div>
+    </div>
+    <div class="visuals">
+        <div class="left">
+            <img src="/images/rock-svgrepo-com.svg" alt="hand" class="hands" id="left-hand">
+        </div>
+        <div class="right">
+            <img src="/images/rock-svgrepo-com.svg" alt="hand" class="hands" id="right-hand">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
