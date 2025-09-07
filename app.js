@@ -17,10 +17,9 @@ function createRipple(event) {
 
 function playGame(playerChoice) {
     animateHands(playerChoice);
-    // random generator for computer
-    let computerChoice = 'paper'
+    const possibleHands = ['rock', 'paper', 'scissors']  
+    const computerChoice = possibleHands[Math.floor(Math.random() * 3)]
     showHands(playerChoice, computerChoice);
-    const possibleHands = ['rock', 'paper', 'scissors']
 }
 
 function animateHands() {
